@@ -27,20 +27,20 @@ while True:
 
 # get the percentage
 while True:
-    print("What percentage tip would you like to give? 10, 12, or 15?")
-    percentage = input("> ")
+    print("What percentage tip would you like to give? 2, 3, or 4?")
+    percentage = input("=====> ")
     # list of acceptable choices
-    choices_list = ["10", "12", "15"]
+    choices_list = ["2", "3", "4"]
     # make sure the input is one of them
     if percentage not in choices_list:
-        print("Please enter 10, 12 or 15.")
+        print("Please enter 2, 3 or 4.")
     else:
         break
 
 # get the number of people
 while True:
     print("How many people to split the bill?")
-    people = input("> ")
+    people = input("=====> ")
     # make sure it's a non-zero natural number
     if not people.isdigit() or people == "0":
         print("Please enter a valid number of people (1,2,3, etc.)")
